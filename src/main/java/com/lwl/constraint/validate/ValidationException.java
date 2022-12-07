@@ -10,4 +10,8 @@ public class ValidationException extends RuntimeException {
         super("执行校验失败");
         this.results = results;
     }
+
+    public List<ValidateResult> getResults() {
+        return results;
+    }
 }
